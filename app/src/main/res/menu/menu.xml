@@ -10,6 +10,10 @@
         android:icon="@drawable/home"/>
     <item
         android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/setting"/>
+        android:title="Map"
+        android:icon="@drawable/map"/>
+    <item
+        android:id="@+id/sensor"
+        android:title="Sensor"
+        android:icon="@drawable/sensor"/>
 </menu>
