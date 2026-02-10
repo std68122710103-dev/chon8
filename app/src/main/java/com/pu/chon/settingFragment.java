@@ -207,7 +207,7 @@ public class settingFragment extends Fragment {
             Get_Current_location();
             googleMap.clear();
             String strtitle = "Chonlathi Location";
-            String strsnippet = " อยู่นี้นะจ๊ะ " + clat[0] + ", " + clng[0];
+            String strsnippet = " อยู่นี้ " + clat[0] + ", " + clng[0];
             LatLng cposition = new LatLng(clat[0], clng[0]);
             MarkerOptions options = new MarkerOptions()
                     .position(cposition)
@@ -215,16 +215,16 @@ public class settingFragment extends Fragment {
                     .snippet(strsnippet)
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
 
-            LatLng cposition2 = new LatLng(46.65660985725523, 2.4743766862730383);
+            LatLng cposition2 = new LatLng(15.246034351492243, 104.84754194919034);
             MarkerOptions options2 = new MarkerOptions()
                     .position(cposition2)
                     .title("maker")
-                    .snippet("เฮื้ยนข่อยเอง")
+                    .snippet("อยูนี้")
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
 
             googleMap.addMarker(options);
             googleMap.addMarker(options2);
-            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(cposition2, 15));
+            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(cposition, 15));
             mMap = googleMap;
         }
     };
